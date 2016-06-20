@@ -7,24 +7,35 @@ html(lang="ru")
     meta(name="author", content="")
     title Starter Template for Joker.Shop
     link(rel="stylesheet", href="/css/main.css")
-    
+
   body
+    
     header.main-head
+      
       nav.main-head__nav
         ul.main-head__list
           li.main-head__item
-            a.main-head__link Главная
+            a(href="#").main-head__link Главная
           li.main-head__item
-            a.main-head__link Каталог
+            a(href="#").main-head__link Каталог
           li.main-head__item
-            a.main-head__link Услуги
+            a(href="#").main-head__link Услуги
           li.main-head__item
-            a.main-head__link Загрузки
-          li.main-head__item 
-            a.main-head__link Новости
+            a(href="#").main-head__link Загрузки
           li.main-head__item
-            a.main-head__link Доставка
+            a(href="#").main-head__link Новости
           li.main-head__item
-            a.main-head__link Корзина
+            a(href="#").main-head__link Доставка
           li.main-head__item
-            a.main-head__link Обратная связь
+            a(href="#").main-head__link Корзина
+          li.main-head__item
+            a(href="#").main-head__link Обратная связь
+            
+            
+      div.main-head__info
+        div.logo
+        div.main-head__contacts
+          div.main-head__tel 7&nbsp(812)nbsp2431339
+          div.main-head__address Магазин в Санкт-Петербурге.
+        a(href="#" title="Корзина &rarr;").cart
+
