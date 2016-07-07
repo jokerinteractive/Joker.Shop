@@ -30,6 +30,28 @@ html(lang="ru")
             a(href="#").main-head__link Корзина
           li.main-head__item
             a(href="#").main-head__link Обратная связь
+            div.main-head__callback
+              
+              form(action="#" method="post").callback
+                
+                h5.callback__head Отправить сообщение
+                
+                label(for="cb-name") Имя&lowast;
+                input(type="text" id="cb-name" name="cb-name")
+                
+                label(for="cb-email") Email&lowast;
+                input(type="text" id="cb-email" name="cb-email")
+                
+                label(for="cb-tel") Телефон&lowast;
+                input(type="text" id="cb-tel" name="cb-tel")
+                
+                label(for="cb-theme") Тема&lowast;
+                input(type="text" id="cb-theme" name="cb-theme")
+                
+                label(for="cb-message") Сообщение&lowast;
+                textarea(id="cb-message" name="cb-message" cols="30" rows="5")
+                
+                input(type="submit" name="cb-submit" value="Отправить").callback__submit
             
             
       div.main-head__info
@@ -50,6 +72,57 @@ html(lang="ru")
             a(href="#").catalog-brief__link Тестовая категория 1
           li.catalog-brief__item
             a(href="#").catalog-brief__link Тестовая категория 2
-            
+       
+      article.intro
+        h1.intro__title Оффициальный представитель 
+        span.intro__title--bold Эргозум
+        span.intro__title--min В Санкт-Петербурге
         
+      section.popular
+        h2.popular__title Популярный товары
+        div.popular__items
+          article.features.features--info
+            a(href="#").features__link
+              h3.features__title Информация.
+              p.features__text-1 Мы являеся официальным диллером брэнда ERGOZOOM, в Санкт-Петербурге.
+              p.features__text-2 Мы специализируемся на системах видеонаблюдения и комплектующих.
+          article.features.features--guarantee
+            a(href="#").features__link
+              h3.features__title Гарантия.
+              p.features__text-1 Гарантия от производителя.
+              p.features__text-2 Уверенность в качестве оборудования этого производителя позволяет нам брать на себя гарантийные обязательства.
+          article.features.features--services
+            a(href="#").features__link
+              h3.features__title Услуги.
+              p.features__text-1 Бесплатный выезд спецталиста
+              p.features__text-2 У нас вы можете заказать услуги монтажа, аудита, модернизации или восстановления системы видеонаблюдения.
+            
+      section.latest
+        h2.latest__title Последние поступления
+        div.latest__items
+          article.product
+            a(href="#").product__link
+              img(src="#" alt="Изображение товара").product__image
+              p.product__price 10000 руб.
+              p.product__description Товар 1
+          article.product
+            a(href="#").product__link
+              img(src="#" alt="Изображение товара").product__image
+              p.product__price 20000 руб.
+              p.product__description Товар 2
+      
+     
+      
+    footer.main-footer
+      
+      div.main-footer__copyright
+        h4.main-footer__copyright-title Магазин
+        p.main-footer__copyright-text Интернет
+        p.main-footer__copyright-c &copy; 2016 Название компании
+        
+      div.main-footer__info
+        div.main-footer__tel 7&nbsp(812)&nbsp2431339
+        div.main-footer__email info@domain-shop.ru
+
+
 
